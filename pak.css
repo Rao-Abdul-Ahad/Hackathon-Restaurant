@@ -1,0 +1,133 @@
+.h {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+
+.inp {
+    width: 100%;
+    height: 50px;
+    font-size: x-large;
+    font-weight: bold;
+    color: grey;
+    background-color: white;
+}
+
+.btn {
+    width: 50%;
+    height: 55px;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+.main {
+    border: 4px solid grey;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 500px;
+    padding: 20px;
+    background-color: black;
+}
+
+.p {
+    font-size: larger;
+    color: white;
+}
+
+.s {
+    font-size: x-large;
+    color: grey;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Phones, 600px and below) */
+@media (max-width: 600px) {
+    .h {
+        font-size: 50px;
+    }
+    
+    .inp {
+        font-size: large;
+        height: 40px;
+    }
+
+    .btn {
+        width: 80%;
+        font-size: x-large;
+    }
+
+    .main {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .p {
+        font-size: medium;
+    }
+
+    .s {
+        font-size: large;
+    }
+}
+
+/* Medium Devices (Tablets, 601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .h {
+        font-size: 60px;
+    }
+
+    .inp {
+        font-size: xx-large;
+    }
+
+    .btn {
+        width: 60%;
+        font-size: large;
+    }
+
+    .main {
+        width: 60%;
+    }
+
+    .p {
+        font-size: larger;
+    }
+
+    .s {
+        font-size: xx-large;
+    }
+}
+
+/* Large Devices (Desktops, 769px and above) */
+@media (min-width: 769px) {
+    .h {
+        font-size: 70px;
+    }
+
+    .inp {
+        font-size: x-large;
+    }
+
+    .btn {
+        width: 50%;
+        font-size: xx-large;
+    }
+
+    .main {
+        width: 30%;
+        height: 500px;
+    }
+
+    .p {
+        font-size: larger;
+    }
+
+    .s {
+        font-size: x-large;
+    }
+}

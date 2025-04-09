@@ -1,0 +1,76 @@
+.main {
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: large;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.read {
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: large;
+    background-color: rgb(139, 127, 127);
+    padding: 10px;
+    width: 30%;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    flex: 0 0 30%;
+}
+
+.read:hover {
+    background-color: rgb(85, 82, 82);
+    color: rgb(207, 207, 207); /* Corrected color value */
+}
+
+.main:hover {
+    background-color: rgb(138, 134, 134);
+    color: rgb(207, 207, 207); /* Corrected color value */
+}
+
+.read1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Responsive styles */
+
+/* For screens smaller than 768px (tablets, small devices) */
+@media (max-width: 768px) {
+    .main {
+        width: 90%; /* Make .main container width larger for smaller screens */
+        margin-left: 10px; /* Adjust margin for better fit */
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .read {
+        width: 45%; /* Adjust width of .read for smaller screens */
+        margin-left: 10px; /* Adjust margin */
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    .read1 {
+        flex-direction: column; /* Stack .read items vertically on smaller screens */
+    }
+}
+
+/* For screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    .main {
+        width: 95%; /* Make .main container almost full width */
+        margin-left: 5px; /* Adjust left margin */
+        margin-top: 5px; /* Adjust top margin */
+    }
+
+    .read {
+        width: 100%; /* Make .read container full width on very small screens */
+        margin-left: 5px; /* Adjust margin */
+        margin-top: 5px; /* Adjust margin */
+    }
+
+    .read1 {
+        flex-direction: column; /* Stack .read items vertically */
+    }
+}
